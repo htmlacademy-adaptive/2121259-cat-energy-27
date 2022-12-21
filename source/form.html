@@ -36,24 +36,24 @@
       <section class="form">
         <div class="form__wrapper">
           <h1 class="form__title">Подбор программы</h1>
-          <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="form__title-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <form class="form-item">
               <fieldset>
                 <legend class="visually-hidden">Данные кота</legend>
-                <label>Имя:<input type="text" placeholder="Барсик" required></label>
-                <label>Вес(кг):<input type="text" placeholder="7" required></label>
-                <label>Возраст(лет):<input type="text" placeholder="7"></label>
+                <label class="form__paragraph">Имя:*<input type="text" placeholder="Барсик" required></label>
+                <label class="form__paragraph">Вес(кг):*<input type="text" placeholder="7" required></label>
+                <label class="form__paragraph">Возраст(лет):<input type="text" placeholder="7"></label>
                 </fieldset>
                 <fieldset>
-                <legend class="visually-hidden">Данные для диеты</legend>
-                <input type="radio" id="slim" name="diet" value="slim" checked><label for="slim">Похудение</label>
-                <input type="radio" id="pro" name="diet" value="pro"><label for="pro">Набор массы</label>
-                <input type="radio" id="advice" name="diet" value="advice"><label for="advice">Не знаю (нужен ваш совет)</label>
+                <legend class="visually-hidden">Тип диеты</legend>
+                <input type="radio" id="slim" name="diet" value="slim" checked><label class="form__paragraph-diet" for="slim">Похудение</label>
+                <input type="radio" id="pro" name="diet" value="pro"><label class="form__paragraph-diet" for="pro">Набор массы</label>
+                <input type="radio" id="advice" name="diet" value="advice"><label class="form__paragraph-diet" for="advice">Не знаю (нужен ваш совет)</label>
                 </fieldset>
                 <fieldset>
                 <legend>Контактные данные(владельца кота)</legend>
-                <label>E-mail:<input type="email" placeholder="kuklachev@gmail.com" required></label>
-                <label>Телефон:<input type="tel" placeholder="8 (960) 900-60-90" required></label>
+                <label class="form__paragraph">E-mail:*<input type="email" placeholder="kuklachev@gmail.com" required></label>
+                <label class="form__paragraph">Телефон:*<input type="tel" placeholder="8 (960) 900-60-90" required></label>
                 </fieldset>
                 <fieldset>
                 <legend>Комментарий</legend>
@@ -61,13 +61,13 @@
                 </fieldset>
                 <fieldset>
                 <legend>Дополнительно</legend>
-                <input type="checkbox" id="sugar" name="ingredients" value="sugar" checked><label for="sugar">Сахарозаменитель</label>
-                <input type="checkbox" id="water" name="ingredients" value="water"><label for="water">Питьевая вода</label>
-                <input type="checkbox" id="milk" name="ingredients" value="milk"><label for="milk">Молоко</label>
-                <input type="checkbox" id="vitamins" name="ingredients" value="vitamins"><label for="vitamins">Витамины</label>
+                <input type="checkbox" id="sugar" name="ingredients" value="sugar" checked><label class="form__paragraph-ingredients" for="sugar">Сахарозаменитель</label>
+                <input type="checkbox" id="water" name="ingredients" value="water"><label class="form__paragraph-ingredients" for="water">Питьевая вода</label>
+                <input type="checkbox" id="milk" name="ingredients" value="milk"><label class="form__paragraph-ingredients" for="milk">Молоко</label>
+                <input type="checkbox" id="vitamins" name="ingredients" value="vitamins"><label class="form__paragraph-ingredients" for="vitamins">Витамины</label>
                 </fieldset>
-                <div class="form__button">
-                <button type="submit">Отправить заявку</button>
+                <div class="form__button-wrapper">
+                <button class="form__button" type="submit">Отправить заявку</button>
                 <b>* — Обязательные поля</b>
               </div>
             </form>
@@ -75,8 +75,8 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       </section>
       <section class="location">
