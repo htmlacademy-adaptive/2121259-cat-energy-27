@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body" >
     <header class="main-header">
@@ -55,7 +56,7 @@
               </ul>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
@@ -82,7 +83,7 @@
               </ul>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
@@ -109,7 +110,7 @@
               </ul>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
@@ -136,7 +137,7 @@
               </ul>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
@@ -163,7 +164,7 @@
               </ul>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
@@ -190,7 +191,7 @@
               </ul>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
@@ -217,7 +218,7 @@
               </ul>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
@@ -226,11 +227,11 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
             <div class="catalog-item__wrapper catalog-item__wrapper--show-all">
-              <p>Показать еще 100500 товаров</p>
-              <p>На самом деле вкусов гораздо больше!</p>
+              <p class="catalog-item__wrapper-text-one">Показать еще 100500 товаров</p>
+              <p class="catalog-item__wrapper-text-two">На самом деле вкусов гораздо больше!</p>
             </div>
             <div class="button-catalog button-catalog--all">
-              <a class="button" href="#">Показать все</a>
+              <a class="button-catalog__link button-catalog__all" href="#">Показать все</a>
             </div>
           </li>
         </ul>
@@ -241,67 +242,67 @@
           <li class="products-extra__item">
             <div class="products-extra__wrapper">
               <p class="products-extra__value">Сахарозаменитель</p>
-              <p>1 упаковка (100 г)</p>
-              <p>200&#8381;</p>
+              <p class="products-extra__size">1 упаковка (100 г)</p>
+              <p class="products-extra__price">200&#8381;</p>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
           <li class="products-extra__item">
             <div class="products-extra__wrapper">
               <p class="products-extra__value">Питьевая вода</p>
-              <p>5 литров</p>
-              <p>50&#8381;</p>
+              <p class="products-extra__size">5 литров</p>
+              <p class="products-extra__price">50&#8381;</p>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
           <li class="products-extra__item">
             <div class="products-extra__wrapper">
               <p class="products-extra__value">Молоко</p>
-              <p>1 литр</p>
-              <p>100&#8381;</p>
+              <p class="products-extra__size">1 литр</p>
+              <p class="products-extra__price">100&#8381;</p>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
           <li class="products-extra__item">
             <div class="products-extra__wrapper">
               <p class="products-extra__value">Витамины</p>
-              <p>1 упаковка (30 г)</p>
-              <p>300&#8381;</p>
+              <p class="products-extra__size">1 упаковка (30 г)</p>
+              <p class="products-extra__price">300&#8381;</p>
             </div>
             <div class="button-catalog">
-              <a class="button" href="#">Заказать</a>
+              <a class="button-catalog__link" href="#">Заказать</a>
             </div>
           </li>
         </ul>
       </section>
       <div class="gift">
-        <p class="gift__title">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="gift__title">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
       </div>
       <section class="contacts">
         <div class="contacts__wrapper">
-         <h3 class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</h3>
-         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
+          <h6 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h6>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </section>
       <section class="location">
         <div class="location__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.2068794401844!2d30.320240665825473!3d59.93861965555563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1669952073822!5m2!1sru!2s" width="320" height="362" style="border:0;"
-           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__logo">
-       <a href="#" class="logo-footer">
+        <a href="#" class="logo-footer">
         <img src="img/img__index/logotype-catenergy.svg" width="128" height="24" alt="Cat Energy">
-       </a>
+        </a>
     </div>
     <div class="social-footer">
       <ul class="social-footer__list">
