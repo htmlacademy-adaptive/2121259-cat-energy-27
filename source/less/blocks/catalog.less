@@ -15,4 +15,25 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 324px 324px;
+      grid-template-rows: 511px 511px;
+    }
+}
+
+.catalog__item {
+  margin: 0;
+  border: 1px solid red;
+}
+
+.catalog__image {
+  width: 140px;
+  height: 112px;
+}
+
+.catalog__container {
+  margin: 0 auto;
+  width: 320px;
 }
