@@ -1,5 +1,5 @@
 .catalog {
-  background-color: #ffffff;
+  background-color: @basic-white;
 }
 
 .catalog__title {
@@ -8,7 +8,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
-    color: #000000;
+    color: @basic-black;
 }
 
 .catalog__list {
@@ -19,8 +19,11 @@
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: 324px 324px;
-      grid-template-rows: 511px 511px;
-    }
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+  }
 }
 
 .catalog__item {
@@ -35,5 +38,13 @@
 
 .catalog__container {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 1220px;
+  }
 }

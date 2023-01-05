@@ -1,14 +1,28 @@
 .special__list {
     text-decoration: none;
+
+    @media (min-width:@tablet-width) {
+      display: grid;
+      grid-template-columns: 230px 230px;
+    }
+
+    @media (min-width:@desktop-width) {
+      display: flex;
+    }
 }
 
 .special__title {
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
-    color: #000000;
+    color: @basic-black;
     margin: 0;
     margin-bottom: 40px;
+
+    @media (min-width:@tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
 }
 
 .special__item {
@@ -20,9 +34,22 @@
     list-style-type: none;
     margin-bottom: 26px;
     color: #444444;
+
+    @media (min-width:@tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
 }
 
 .special__wrapper {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
+
+  @media (min-width:@tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 1220px;
+  }
 }

@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     background: #68b738d9;
+
+    @media (min-width:@tablet-width) {
+      background: none;
+    }
 }
 
 .main-promo__title-one {
@@ -12,7 +16,14 @@
     font-size: 36px;
     line-height: 36px;
     text-align: center;
-    color: #ffffff;
+    color: @basic-white;
+
+    @media (min-width:@tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      color: @basic-black;
+      text-align: left;
+    }
 }
 
 .main-promo__title-two {
@@ -24,6 +35,13 @@
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
+
+    @media (min-width:@tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      color: @basic-black;
+      text-align: left;
+    }
 }
 
 .main-promo__button-wrapper {
@@ -32,6 +50,9 @@
 
 .main-promo__wrapper {
   margin: 0 auto;
-  width: 320px;
-  min-height: 302px;
+  width: 280px;
+
+  @media (min-width:@tablet-width) {
+    width: 708px;
+  }
 }

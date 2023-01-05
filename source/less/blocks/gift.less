@@ -1,7 +1,11 @@
 .gift {
   background-color: @basic-green;
   width: 280px;
-  height: 290px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
 }
 
 .gift__title {
@@ -9,5 +13,5 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: @basic-white;
 }

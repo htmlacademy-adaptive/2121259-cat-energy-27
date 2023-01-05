@@ -1,8 +1,16 @@
 .main-footer {
-background-color: @basic-grey;
+  background-color: @basic-grey;
 }
 
 .main-footer__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width:@tablet-width) {
+    flex-direction: row;
+    width: 708px;
+}
 }
