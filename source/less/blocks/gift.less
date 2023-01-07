@@ -1,10 +1,14 @@
 .gift {
-  background-color: @basic-green;
+  background: @basic-green;
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
   }
 }
 
@@ -12,6 +16,10 @@
   font-family:@lato;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: @basic-white;
+  padding: 186px 61px 43px 58px;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 124px 69px 422px;
+  }
 }

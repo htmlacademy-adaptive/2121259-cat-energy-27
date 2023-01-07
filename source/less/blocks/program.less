@@ -3,6 +3,7 @@
 }
 
 .program__item {
+    position: relative;
     background-color: @basic-grey;
     padding-top: 30px;
     padding-left: 20px;
@@ -46,6 +47,17 @@
       margin-bottom: 73px;
       text-align: center;
     }
+}
+
+.program__item-title::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  top: 23px;
+  background: @basic-green url("/source/img/img__index/pro-cat.svg") no-repeat;
+  border-radius: 50%;
 }
 
 .program__item-text {
