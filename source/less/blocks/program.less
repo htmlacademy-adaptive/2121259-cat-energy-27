@@ -1,13 +1,27 @@
 .program {
-    background-color: #ffffff;
+    background-color: @basic-white;
 }
 
 .program__item {
-    width: 280px;
-    min-height: 266px;
-    margin: 0 auto;
+    position: relative;
     background-color: @basic-grey;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 22px;
+    padding-right: 33px;
     margin-bottom: 20px;
+
+    @media (min-width:@tablet-width) {
+      padding-top: 77px;
+      padding-left: 52px;
+      padding-bottom: 57px;
+      padding-right: 330px;
+  }
+
+  @media (min-width:@desktop-width) {
+    padding-bottom: 59px;
+    padding-right: 65px;
+  }
 }
 
 .program__item-title {
@@ -17,11 +31,33 @@
     font-size: 24px;
     line-height: 37px;
     text-transform: uppercase;
-    color: #000000;
+    color: @basic-black;
     text-align: center;
-    padding-top: 30px;
     margin: 0;
+    margin-bottom: 29px;
 
+    @media (min-width:@tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width:@desktop-width) {
+      margin-bottom: 73px;
+      text-align: center;
+    }
+}
+
+.program__item-title::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  top: 23px;
+  background: @basic-green url("/source/img/img__index/pro-cat.svg") no-repeat;
+  border-radius: 50%;
 }
 
 .program__item-text {
@@ -31,12 +67,40 @@
     font-size: 14px;
     line-height: 18px;
     color: #444444;
-    padding-left: 20px;
-    padding-right: 33px;
+    margin: 0;
+    margin-bottom: 42px;
+
+    @media (min-width:@tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      margin-bottom: 52px;
+  }
+
+  @media (min-width:@desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .program__item-link {
+    display: block;
     text-decoration: none;
     color: #000000;
     text-transform: uppercase;
+}
+
+.program__wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width:@tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width:@desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+    width: 1220px;
+  }
 }
