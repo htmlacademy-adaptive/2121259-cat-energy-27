@@ -39,41 +39,72 @@
       <section class="form">
         <div class="form__wrapper">
           <h1 class="form__title">Подбор программы</h1>
-          <p class="form__title-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-            <form class="form-item">
-              <fieldset>
+          <p class="form__title-text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+            <form class="form__interview">
+              <div class="form__data-cat-item-diet-wrapper">
+              <fieldset class="form__item form__item--data-cat">
                 <legend class="visually-hidden">Данные кота</legend>
-                <label class="form__paragraph">Имя:*<input type="text" placeholder="Барсик" required></label>
-                <label class="form__paragraph">Вес(кг):*<input type="text" placeholder="7" required></label>
-                <label class="form__paragraph">Возраст(лет):<input type="text" placeholder="7"></label>
+                <label class="form__paragraph">
+                  <span class="form__paragraph-name">Имя:*</span>
+                  <input class="form__item-field" type="text" placeholder="Барсик" required></label>
+                <label class="form__paragraph">
+                  <span class="form__paragraph-name">Вес(кг):*</span>
+                  <input class="form__item-field" type="text" placeholder="7" required></label>
+                <label class="form__paragraph">
+                  <span class="form__paragraph-name">Возраст(лет):</span>
+                  <input class="form__item-field" type="text" placeholder="7"></label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form__item form__item--diet">
                 <legend class="visually-hidden">Тип диеты</legend>
-                <input type="radio" id="slim" name="diet" value="slim" checked><label class="form__paragraph-diet" for="slim">Похудение</label>
-                <input type="radio" id="pro" name="diet" value="pro"><label class="form__paragraph-diet" for="pro">Набор массы</label>
-                <input type="radio" id="advice" name="diet" value="advice"><label class="form__paragraph-diet" for="advice">Не знаю (нужен ваш совет)</label>
+                <input class="form__radio" type="radio" id="slim" name="diet" value="slim" checked>
+                <label class="form__paragraph-diet" for="slim">Похудение</label>
+                <input class="form__radio" type="radio" id="pro" name="diet" value="pro">
+                <label class="form__paragraph-diet" for="pro">Набор массы</label>
+                <input class="form__radio" type="radio" id="advice" name="diet" value="advice">
+                <label class="form__paragraph-diet" for="advice">Не знаю (нужен ваш совет)</label>
                 </fieldset>
-                <fieldset>
-                <legend>Контактные данные(владельца кота)</legend>
-                <label class="form__paragraph">E-mail:*<input type="email" placeholder="kuklachev@gmail.com" required></label>
-                <label class="form__paragraph">Телефон:*<input type="tel" placeholder="8 (960) 900-60-90" required></label>
-                </fieldset>
-                <fieldset>
-                <legend>Комментарий</legend>
-                <label><input type="text" placeholder="Расскажите обо всех повадках кота"></label>
-                </fieldset>
-                <fieldset>
-                <legend>Дополнительно</legend>
-                <input type="checkbox" id="sugar" name="ingredients" value="sugar" checked><label class="form__paragraph-ingredients" for="sugar">Сахарозаменитель</label>
-                <input type="checkbox" id="water" name="ingredients" value="water"><label class="form__paragraph-ingredients" for="water">Питьевая вода</label>
-                <input type="checkbox" id="milk" name="ingredients" value="milk"><label class="form__paragraph-ingredients" for="milk">Молоко</label>
-                <input type="checkbox" id="vitamins" name="ingredients" value="vitamins"><label class="form__paragraph-ingredients" for="vitamins">Витамины</label>
-                </fieldset>
-                <div class="form__button-wrapper">
-                <button class="form__button" type="submit">Отправить заявку</button>
-                <b>* — Обязательные поля</b>
               </div>
+                <fieldset class="form__item form__item--data-master">
+                <legend class="form__legend-title form__item--data-title">Контактные данные<br>(владельца кота)</legend>
+                <div class="form__item-email-tel-wrapper">
+                <label class="form__paragraph form__paragraph--indent">
+                  <span class="form__paragraph-name-text">E-mail:*</span>
+                  <input class="form__item-field form__item-placeholder" type="email" placeholder="kuklachev@gmail.com" required></label>
+                <label class="form__paragraph">
+                  <span class="form__paragraph-name-text">Телефон:*</span>
+                  <input class="form__item-field form__item-placeholder" type="tel" placeholder="8 (960) 900-60-90" required></label>
+                </div>
+                </fieldset>
+                <fieldset class="form__item">
+                <legend class="form__legend-title form__item--comment">Комментарий</legend>
+                <label class="form__item-comment-field" for="for-textarea">
+                  <textarea class="form__item-comment-text" rows="9" id="for-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </label>
+                </fieldset>
             </form>
+                <p class="form__item-extra-title">Дополнительно</p>
+                <div class="form__list-button-wrapper">
+                  <ul class="form__list">
+                    <li class="form__list-item">
+                <input class="form__list-item-input" type="checkbox" id="sugar" name="ingredients" value="sugar" checked>
+                <label class="form__paragraph-ingredients" for="sugar">Сахарозаменитель</label>
+                    </li>
+                    <li class="form__list-item">
+                <input class="form__list-item-input" type="checkbox" id="water" name="ingredients" value="water">
+                <label class="form__paragraph-ingredients" for="water">Питьевая вода</label>
+                    </li>
+                <li class="form__list-item">
+                <input class="form__list-item-input" type="checkbox" id="milk" name="ingredients" value="milk">
+                <label class="form__paragraph-ingredients" for="milk">Молоко</label>
+                    </li>
+                    <li class="form__list-item">
+                <input class="form__list-item-input" type="checkbox" id="vitamins" name="ingredients" value="vitamins">
+                <label class="form__paragraph-ingredients" for="vitamins">Витамины</label>
+                    </li>
+                  </ul>
+                <button class="form__button" type="submit">Отправить заявку</button>
+                <b class="form__required-field">* — Обязательные поля</b>
+              </div>
         </div>
       </section>
       <section class="contacts">
