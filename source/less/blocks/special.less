@@ -33,6 +33,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    position: relative;
 
     @media (min-width:@tablet-width) {
       flex-direction: column;
@@ -85,5 +86,110 @@
 
   @media (min-width:@desktop-width) {
     width: 1220px;
+  }
+}
+
+.special__item--1::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.special__item--2::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special__item--3::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special__item--4::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special__text--1::after {
+
+  @media (min-width:@tablet-width) {
+    content: "";
+    background-image: url("../img/img__index/number-1.svg");
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 280px;
+    position: absolute;
+    top: 40px;
+    left: 112px;
+    z-index: -1;
+
+  }
+
+  @media (min-width:@desktop-width) {
+  }
+}
+
+.special__text--2::after {
+
+  @media (min-width:@tablet-width) {
+    content: "";
+    background-image: url("../img/img__index/number-2.svg");
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 280px;
+    position: absolute;
+    top: 40px;
+    left: 112px;
+    z-index: -1;
+
+  }
+
+  @media (min-width:@desktop-width) {
+  }
+}
+
+.special__text--3::after {
+
+  @media (min-width:@tablet-width) {
+    content: "";
+    background-image: url("../img/img__index/number-3.svg");
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 280px;
+    position: absolute;
+    top: 40px;
+    left: 112px;
+    z-index: -1;
+
+  }
+
+  @media (min-width:@desktop-width) {
+  }
+}
+
+.special__text--4::after {
+
+  @media (min-width:@tablet-width) {
+    content: "";
+    background-image: url("../img/img__index/number-4.svg");
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 280px;
+    position: absolute;
+    top: 40px;
+    left: 112px;
+    z-index: -1;
+
+  }
+
+  @media (min-width:@desktop-width) {
   }
 }

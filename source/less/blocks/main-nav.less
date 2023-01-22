@@ -11,16 +11,37 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .main-nav__link {
     text-decoration: none;
     color: #000000;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    display: block;
 }
 
 .main-nav__toogle {
+  display: block;
   width: 24px;
-  height: 16px;
+  height: 18px;
   border: none;
   cursor: pointer;
+  border-bottom: 1.5px solid #000000;
+  background: inherit;
+}
+
+.main-nav__toogle::before {
+  content: "";
+  border-top: 1.5px solid #000000;
+  position: absolute;
+  width: 24px;
+  top: 22px;
+  right: 0;
+  box-shadow: 0px 7px 0px black;
+}
+
+.main-nav__item {
+  border-top: 1px solid #E6E6E6;
 }

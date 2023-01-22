@@ -8,6 +8,7 @@
     line-height: 40px;
     margin: 0;
     margin-bottom: 40px;
+    padding-top: 25px;
 
     @media (min-width:@tablet-width) {
       font-size: 60px;
@@ -21,9 +22,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
     color: #444444;
+    margin-bottom: 20px;
 
     @media (min-width:@tablet-width) {
       font-size: 16px;
@@ -31,9 +31,27 @@
   }
 }
 
+.example__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  text-align: center;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
+  position: relative;
+}
+
 .example__number {
     font-size: 24px;
     line-height: 24px;
+    padding-top: 14px;
 }
 
 .example__description {
@@ -43,6 +61,12 @@
     font-size: 12px;
     line-height: 100%;
     color: #444444;
+    margin: 0;
+    position: absolute;
+    width: 81px;
+    bottom: -10px;
+    left: 20px;
+    background: #EAEAEA;
 }
 
 .example__cost {
@@ -50,7 +74,9 @@
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+    display: block;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .example__wrapper {

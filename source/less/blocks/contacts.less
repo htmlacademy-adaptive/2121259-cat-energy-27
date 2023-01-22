@@ -3,6 +3,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    text-transform: uppercase;
     color: #111111;
 
     @media (min-width:@tablet-width) {
@@ -33,8 +34,11 @@
 .contacts__wrapper {
   margin: 0 auto;
   width: 280px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 139px 139px;
+  column-gap: 2px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width:@tablet-width) {
     width: 708px;
