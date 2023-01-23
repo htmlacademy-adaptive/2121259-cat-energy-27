@@ -1,11 +1,22 @@
 .main-promo {
     margin: 0;
     padding: 0;
-    background: #68b738d9;
 
     @media (min-width:@tablet-width) {
       background: none;
     }
+}
+
+.main-promo::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 305px;
+  background-color: #63a73a;
+  background-image: url();
+  background-position: center;
 }
 
 .main-promo__title-one {
