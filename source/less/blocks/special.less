@@ -1,23 +1,203 @@
 .special__list {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width:@tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width:@desktop-width) {
+
+    }
 }
 
 .special__title {
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
-    color: #000000;
+    color: @basic-black;
     margin: 0;
     margin-bottom: 40px;
+
+    @media (min-width:@tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
 }
 
 .special__item {
-    font-family: @lato;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media (min-width:@tablet-width) {
+      flex-direction: column;
+      justify-content: left;
+      width: 250px;
+      margin-bottom: 0;
+      padding-bottom: 57px;
+    }
+}
+
+.special__text {
+  font-family: @lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  width: calc(100% - 80px);
+
+  @media (min-width:@tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
+.special__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: @basic-green;
+
+  @media (min-width:@tablet-width) {
+    margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
+}
+
+.special__wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width:@tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 1220px;
+  }
+}
+
+.special__item--1::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.special__item--2::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special__item--3::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special__item--4::before {
+  content: "";
+  background-image: url("../img/img__index/special-icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special__text--1::after {
+
+  @media (min-width:@tablet-width) {
+    content: "1";
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 112px;
+    z-index: -1;
+    font-family: @oswald;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    list-style-type: none;
-    margin-bottom: 26px;
-    color: #444444;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+  }
+
+  @media (min-width:@desktop-width) {
+  }
+}
+
+.special__text--2::after {
+
+  @media (min-width:@tablet-width) {
+    content: "2";
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 112px;
+    z-index: -1;
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+  }
+
+  @media (min-width:@desktop-width) {
+  }
+}
+
+.special__text--3::after {
+
+  @media (min-width:@tablet-width) {
+    content: "3";
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 112px;
+    z-index: -1;
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+  }
+
+  @media (min-width:@desktop-width) {
+  }
+}
+
+.special__text--4::after {
+
+  @media (min-width:@tablet-width) {
+    content: "4";
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 112px;
+    z-index: -1;
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+  }
+
+  @media (min-width:@desktop-width) {
+  }
 }

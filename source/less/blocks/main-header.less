@@ -1,3 +1,46 @@
 .main-header {
     background-color:#ffffff;
 }
+
+.main-header__wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.main-header__column {
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  height: 100%;
+
+  @media (min-width: @tablet-width) {
+   margin-right: 90px;
+   padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.main-header__logo-text {
+  display: block;
+}
+
+.main-header__logo {
+  display: block;
+}
