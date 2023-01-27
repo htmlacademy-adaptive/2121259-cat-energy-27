@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
   </head>
   <body class="page__body" >
-    <header class="main-header">
+    <header class="main-header open">
       <div class="main-header__wrapper">
         <div class="main-header__column">
       <a href="./index.html" class="main-header__logo">
@@ -17,12 +19,13 @@
           <img class="main-header__picture" src="img/img__index/logo_mobile.svg" width="191" height="38" alt="Логотип КэтЭнерджи">
         </picture>
       </a>
-      <button class="main-nav__toogle main-nav__toogle--close" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+      <button class="main-header__burger-btn" type="button" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
-      <nav class="main-nav main-nav--open">
-        <div class="main-nav__wrapper">
+      <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -34,21 +37,18 @@
               <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
       </div>
     </header>
     <main class="main-container">
       <section class="main-promo">
-        <div class="main-promo__background">
         <div class="main-promo__wrapper">
         <h1 class="main-promo__title-one">Функциональное питание для котов</h1>
         <h2 class="main-promo__title-two">Занялся собой? Займись котом!</h2>
         <picture>
-          <!-- <source media="(min-width: 768px)" srcset="img/img__index/index-tablet.png img/img__index/index-tablet@2x.png" type="image/png"> -->
-          <img src="img/img__index/index-mobile.png", srcset="img/img__index/index-mobile@2x.png 2x" width="280" height="270" alt="Банка питания для кошек с курицей">
+          <!-- <source media="(min-width: 768px)" srcset="img/img__index/index-tablet.png 1x, img/img__index/index-tablet@2x.png 2x"> -->
+          <img src="img/img__index/index-mobile.png" srcset="img/img__index/index-mobile@2x.png 2x" width="280" height="270" alt="Банка питания для кошек с курицей">
         </picture>
-        </div>
         <a class="main-button" href="#">Подобрать программу</a>
         </div>
       </section>
