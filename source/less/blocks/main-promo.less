@@ -63,18 +63,48 @@
       color: @basic-black;
       text-align: left;
     }
+
+    @media (min-width:@desktop-width) {
+      margin-bottom: 49px;
+    }
 }
 
 .main-promo__wrapper {
   margin: 0 auto;
   width: 280px;
   margin-bottom: 20px;
+  position: relative;
 
   @media (min-width:@tablet-width) {
     width: 708px;
+    margin: 0;
+    padding-left: 118px;
+    padding-bottom: 526px;
   }
 
   @media (min-width:@desktop-width) {
     width: 1220px;
+    padding-left: 190px;
+    padding-bottom: 152px;
+  }
+}
+
+.main-promo__picture {
+  @media (min-width:@tablet-width) {
+    width: 709px;
+    height: 609px;
+    position: absolute;
+    z-index: -1;
+    left: 47px;
+    top: 205px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: 0;
+    left: 514px;
+    z-index: 1;
+
   }
 }
