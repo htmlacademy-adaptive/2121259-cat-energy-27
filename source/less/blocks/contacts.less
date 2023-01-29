@@ -29,6 +29,10 @@
       text-align: right;
       width: 160px;
     }
+
+    @media (min-width:@desktop-width) {
+      text-align: left;
+    }
 }
 
 .contacts__wrapper {
@@ -45,14 +49,24 @@
     column-gap: 296px;
   }
 
-  @media (min-width:@tablet-width) {
-    padding-top: 56px;
-    padding-bottom: 55px;
+  @media (min-width:@desktop-width) {
+    position: absolute;
+    left: 110px;
+    top: 0%;
+    max-width: 565px;
+    width: 100%;
+    background: #ffffff;
+    padding: 56px 60px 56px 80px;
+    transform: translateY(48%);
+    column-gap: 88px;
+    grid-template-columns: 163px 175px;
+    box-sizing: border-box;
   }
 }
 
 .contacts {
   background: #F2F2F2;
+  position: relative;
 }
 
 .contacts__address span {
