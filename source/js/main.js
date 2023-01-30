@@ -1,6 +1,6 @@
-let navMain = document.querySelector('main-nav');
-let headerToggle = document.querySelector('main-header__burger-btn');
-let mainHeader = document.querySelector('main-header');
+let navMain = document.querySelector('.main-nav');
+let headerToggle = document.querySelector('.main-header__burger-btn');
+let mainHeader = document.querySelector('.main-header');
 
 mainHeader.classList.remove('main-header--nojs');
 mainHeader.classList.remove('main-header--opened');
