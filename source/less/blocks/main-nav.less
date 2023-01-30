@@ -11,12 +11,6 @@
     }
 }
 
-.main-nav--open {
-  @media (max-width: @mobile-width-only) {
-  display: block;
-  }
-}
-
 .main-nav__item {
   position: relative;
 
@@ -115,4 +109,9 @@
   @media (min-width: @desktop-width) {
     background-color: #ffffff;
   }
+}
+
+.main-header--opened.main-header--nojs  .main-nav {
+  position: static;
+  padding: 0;
 }
