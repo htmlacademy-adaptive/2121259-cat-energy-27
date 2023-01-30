@@ -35,9 +35,6 @@
       line-height: 30px;
       margin-bottom: 66px;
     }
-
-    @media (min-width:@desktop-width) {
-    }
 }
 
 .form__paragraph {
@@ -54,15 +51,9 @@
       line-height: 30px;
       margin-bottom: 20px;
     }
-
-    @media (min-width:@desktop-width) {
-    }
 }
 
 .form__paragraph--indent {
-
-  @media (min-width:@tablet-width) {
-  }
 
   @media (min-width:@desktop-width) {
     margin: 0;
@@ -87,9 +78,6 @@
       font-size: 20px;
       line-height: 30px;
     }
-
-    @media (min-width:@desktop-width) {
-    }
 }
 
 .form__paragraph:last-child {
@@ -112,9 +100,6 @@
     @media (min-width:@tablet-width) {
       font-size: 20px;
       line-height: 30px;
-    }
-
-    @media (min-width:@desktop-width) {
     }
 }
 
@@ -166,9 +151,6 @@
   @media (min-width:@tablet-width) {
     margin-bottom: 72px;
   }
-
-  @media (min-width:@desktop-width) {
-  }
 }
 
 .form__required-field {
@@ -176,12 +158,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-
-  @media (min-width:@tablet-width) {
-  }
-
-  @media (min-width:@desktop-width) {
-  }
 }
 
 .form__wrapper {
@@ -232,9 +208,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  @media (min-width:@desktop-width) {
-  }
 }
 
 .form__paragraph-name {
@@ -254,22 +227,14 @@
   @media (min-width:@tablet-width) {
     border: 1px solid #E7E7E7;
   }
-
-  @media (min-width:@desktop-width) {
-  }
 }
 
 .form__item-email-tel-wrapper {
-
-  @media (min-width:@tablet-width) {
-
-  }
 
   @media (min-width:@desktop-width) {
     display: grid;
     grid-auto-flow: column;
   }
-
 }
 
 .form__legend-title {
@@ -285,15 +250,12 @@
   }
 }
 
-.form__item--data-title {
+.form__legend-title--data {
   margin-bottom: 35px;
 
   @media (min-width:@tablet-width) {
    br{display: none;}
    margin-bottom: 76px;
-  }
-
-  @media (min-width:@desktop-width) {
   }
 }
 
@@ -303,19 +265,13 @@
   @media (min-width:@tablet-width) {
     margin-bottom: 65px;
    }
-
-   @media (min-width:@desktop-width) {
-   }
 }
 
-.form__item--comment {
+.form__legend-title--comment {
   margin-bottom: 37px;
 
   @media (min-width:@tablet-width) {
     margin-bottom: 76px;
-   }
-
-   @media (min-width:@desktop-width) {
    }
 }
 
@@ -342,14 +298,13 @@
   color: #444444;
   padding-top: 9px;
   margin-bottom: 22px;
+  box-sizing: border-box;
+  padding-left: 10px;
 
   @media (min-width:@tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 65px;
-   }
-
-   @media (min-width:@desktop-width) {
    }
 }
 
@@ -368,10 +323,6 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 57px;
-   }
-
-   @media (min-width:@desktop-width) {
-
    }
 }
 
@@ -403,9 +354,6 @@
 
 .form__data-cat-item-diet-wrapper {
 
-  @media (min-width:@tablet-width) {
-   }
-
    @media (min-width:@desktop-width) {
       display: grid;
       grid-template-columns: 568px 568px;
@@ -436,34 +384,26 @@
     height: 40px;
 
   }
-
-  @media (min-width:@desktop-width) {
-
-  }
 }
 
 .form__list-item-input-custom::before {
- content: "";
- display: inline-block;
- width: 18px;
- height: 14px;
- background-image:url("../img/img__form/checkbox-arrow.svg");
- background-size: contain;
- background-repeat: no-repeat;
- position: absolute;
- left: 50%;
- top: 50%;
- transform: translate(-50%, -50%) scale(0);
- transition: 0.2s ease-in;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background-image:url("../img/img__form/checkbox-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
 
- @media (min-width:@tablet-width) {
-  width: 24px;
-  height: 19px;
-}
-
-@media (min-width:@desktop-width) {
-
-}
+  @media (min-width:@tablet-width) {
+    width: 24px;
+    height: 19px;
+  }
 }
 
 .form__list-item-input:checked + .form__list-item-input-custom::before {
@@ -492,10 +432,6 @@
     width: 40px;
     height: 40px;
   }
-
-  @media (min-width:@desktop-width) {
-
-  }
 }
 
 .form__radio-custom::before {
@@ -514,10 +450,6 @@
   @media (min-width:@tablet-width) {
     width: 18px;
     height: 18px;
-  }
-
-  @media (min-width:@desktop-width) {
-
   }
 }
 
